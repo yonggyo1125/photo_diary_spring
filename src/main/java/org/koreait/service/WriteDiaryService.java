@@ -52,7 +52,7 @@ public class WriteDiaryService {
 		diary.setContent(request.getContent());
 		diary.setMember(member);
 		if (isSuccess) {
-			diary.setPhotoUrl("/images/" + fileName);
+			diary.setPhotoUrl("images/" + fileName);
 		}
 		
 		Diary newDiary = diaryRepository.save(diary);
